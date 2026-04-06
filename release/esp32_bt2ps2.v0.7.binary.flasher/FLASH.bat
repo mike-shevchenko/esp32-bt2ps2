@@ -1,0 +1,1 @@
+esptool.exe -p COM11 -b 460800 --before default_reset --after hard_reset --chip esp32 write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader.bin 0x20000 esp32-bt2ps2-v0_7.bin 0x9000 partition-table.bin
